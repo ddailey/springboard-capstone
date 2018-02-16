@@ -1,7 +1,7 @@
 ---
 title: "Capstone Project Proposal"
 author: "DeAnna Dailey"
-date: "February 5, 2018"
+date: "February 15, 2018"
 output: html_document
 ---
 
@@ -12,21 +12,31 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### What is the problem?
 
-problem description here
+Client has 400,000 emails in an email list and would like to know how to better predict under what circumstances new subscribers will become purchasers.
 
 ### Who is the client?
 
-describe client and why they care about this info 
+Client is a real existing client - a health and wellness company with an active email list. 
 
 ### Where is the data?
 
-describe data - where to find it, how to get it
+Data is in an email management system (Ontraport) with extensive tagging and informational data associated with each email.
+
+Additional data is in Shopify, associating purchase history with customer email address.
 
 ### Approach
 
-how will I turn this data into the usable output
+Data from both Ontraport and Shopify is downloadable via csv. The two datasets will be joined on email address. Then a number will be assigned to the email address and the email address and all other personally identifiable information will be removed (including name, street address, ip address). 
+
+Will look at adding average demographic data as determined by zip code.
+
+Data will need significant cleaning to turn each possible tag into its own column. Other cleaning done as needed.
+
+Some percent of the data (50%?) will be used to train a machine algorhithm to predict whether a subscriber becomes a customer and the remaining percent will be used to test the accuracy of the algorithm. 
 
 ### Deliverables
 
-code? paper? slide deck? website?
+Code used to train and test machine learning.
+Report detailing the outcomes and predictions, to also be shared with real client.
+
 

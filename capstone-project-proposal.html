@@ -11,6 +11,7 @@
 
 <meta name="author" content="DeAnna Dailey" />
 
+<meta name="date" content="2018-02-15" />
 
 <title>Capstone Project Proposal</title>
 
@@ -120,30 +121,34 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Capstone Project Proposal</h1>
 <h4 class="author"><em>DeAnna Dailey</em></h4>
-<h4 class="date"><em>February 5, 2018</em></h4>
+<h4 class="date"><em>February 15, 2018</em></h4>
 
 </div>
 
 
 <div id="what-is-the-problem" class="section level3">
 <h3>What is the problem?</h3>
-<p>problem description here</p>
+<p>Client has 400,000 emails in an email list and would like to know how to better predict under what circumstances new subscribers will become purchasers.</p>
 </div>
 <div id="who-is-the-client" class="section level3">
 <h3>Who is the client?</h3>
-<p>describe client and why they care about this info</p>
+<p>Client is a real existing client - a health and wellness company with an active email list.</p>
 </div>
 <div id="where-is-the-data" class="section level3">
 <h3>Where is the data?</h3>
-<p>describe data - where to find it, how to get it</p>
+<p>Data is in an email management system (Ontraport) with extensive tagging and informational data associated with each email.</p>
+<p>Additional data is in Shopify, associating purchase history with customer email address.</p>
 </div>
 <div id="approach" class="section level3">
 <h3>Approach</h3>
-<p>how will I turn this data into the usable output</p>
+<p>Data from both Ontraport and Shopify is downloadable via csv. The two datasets will be joined on email address. Then a number will be assigned to the email address and the email address and all other personally identifiable information will be removed (including name, street address, ip address).</p>
+<p>Will look at adding average demographic data as determined by zip code.</p>
+<p>Data will need significant cleaning to turn each possible tag into its own column. Other cleaning done as needed.</p>
+<p>Some percent of the data (50%?) will be used to train a machine algorhithm to predict whether a subscriber becomes a customer and the remaining percent will be used to test the accuracy of the algorithm.</p>
 </div>
 <div id="deliverables" class="section level3">
 <h3>Deliverables</h3>
-<p>code? paper? slide deck? website?</p>
+<p>Code used to train and test machine learning. Report detailing the outcomes and predictions, to also be shared with real client.</p>
 </div>
 
 
