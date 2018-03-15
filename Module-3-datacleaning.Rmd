@@ -24,8 +24,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ##7) Combine all duplicate address columns, with priority for Shipping address data
 
-##8) Turn Contact Tags into a searchable list
-### May still do something else with this column in the future - not sure yet how it's most useful.
+##8) Turn Contact Tags into a searchable list 
+###May still do something else with this column in the future - not sure yet how it's most useful.
 
 ##9) Create Total Spent/per time period to resolve the different lifespans of each customer
 ###-turn date fields from chr to dates
