@@ -25,14 +25,21 @@ knitr::opts_chunk$set(echo = TRUE)
 ##7) Combine all duplicate address columns, with priority for Shipping address data
 
 ##8) Turn Contact Tags into a searchable list 
+
 ###May still do something else with this column in the future - not sure yet how it's most useful.
 
 ##9) Create Total Spent/per time period to resolve the different lifespans of each customer
+
 ###-turn date fields from chr to dates
+
 ###-convert spent_to_date to numeric, by removing dollar sign from beginning and converting
+
 ###-create total_spent column from whichever is larger of total_spent_sh or spent_to_date
+
 ###-create lifespan of customer by subtracting date_added from last_activity
+
 ###-convert lifespan to days from seconds (minimum lifespan of 1 day - even if they only signed up for an hour, we're still going to say they were 1 day)
+
 ###-create new column avg_daily_spend_lifespan by dividing total_spent by lifespan
 
 
